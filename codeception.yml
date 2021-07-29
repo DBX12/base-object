@@ -1,0 +1,19 @@
+namespace: tests
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/support
+    envs: tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+modules:
+    enabled:
+        - Asserts
+coverage:
+    enabled: true
+    whitelist:
+        include:
+            - ./src/*.php
